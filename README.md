@@ -3,6 +3,7 @@
 Esse projeto é um exemplo simples de cadastro e lançamento. Utilizando a plataforma Asp .NET Core, abordando o conceito MVC. 
 
 Asp .NET Core 2.0 
+
 MySQL 8.0
 
 
