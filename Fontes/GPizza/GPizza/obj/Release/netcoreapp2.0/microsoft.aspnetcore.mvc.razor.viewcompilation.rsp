@@ -1,0 +1,13 @@
+D:\ProjetoGPizza\Fontes\GPizza\GPizza
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=GPizza
+--content-root=D:\ProjetoGPizza\Fontes\GPizza\GPizza
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Cidade\Index.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Cidade\IndexPesquisar.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Cliente\Index.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Funcionario\Index.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Funcionario\IndexPesquisar.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Home\Index.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Login\Index.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Shared\_Layout.cshtml
+--file=D:\ProjetoGPizza\Fontes\GPizza\GPizza\Views\Shared\_LayoutModal.cshtml

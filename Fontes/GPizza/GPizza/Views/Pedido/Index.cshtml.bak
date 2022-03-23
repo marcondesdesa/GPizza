@@ -1,0 +1,161 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section estilos{
+    <link href="~/lib/Framework/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/Framework/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="~/lib/Framework/css/sb-admin.css" rel="stylesheet">
+    <link href="~/lib/fancybox/fancybox3/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="~/css/css.css" rel="stylesheet" />
+    <link href="~/css/Modal_Pesquisa/modal.css" rel="stylesheet" />
+}
+
+@section scripts{
+
+    <script src="~/lib/FodaoJS.js"></script>
+    <script src="~/lib/Funcoes.js"></script>
+    <script src="~/js/Pedido/index.js"></script>
+    <script src="~/lib/Framework/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Framework/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/jquery.dataTables.js"></script>
+
+    <script src="~/lib/Framework/js/sb-admin.min.js"></script>
+    <script src="~/lib/Framework/js/demo/datatables-demo.js"></script>
+
+
+    <script src="~/lib/fancybox/jquery/jquery-3.4.0.min.js"></script>
+    <script src="~/lib/fancybox/fancybox3/jquery.fancybox.min.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.js"></script>
+}
+
+
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <div class="card mb-3">
+            <div class="container" style="background-color:#E4E4E4">
+                <div class="form-group col-md-6">
+                    <h1>Pedido</h1>
+                </div>
+                <div class="form-row col-md">
+                    <div class="form-group col-md-2">
+                        <label for="codigo">Código:</label>
+                        <input disabled name="ped_codigo" type="text" class="form-control" id="ped_codigo" value="0">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="data">Data:</label>
+                        <input disabled name="ped_data" type="date" maxlength="12" class="form-control" id="ped_data" value="">
+                    </div>
+
+                    <div class="form-group col-md-2 ">
+                        <div style="position: relative; top:32px; width: 90px; ">
+                            <input class="btn btn-primary" type="button" value="Pesquisar" onclick="index.abrirPesquisa()" />
+                        </div>
+                    </div>
+                    <div class="form-row col-md2">
+
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-md-6">
+                    <label for="inputCliente">Cliente*:</label>
+                    <select required name="cli_codigo" id="cli_codigo" class="form-control"></select>
+                </div>
+
+                <div class="container" style="background-color:#E4E4E3">
+                    <div class="form-group col-md-6">
+                        <h3>Itens do Pedido </h3>
+                    </div>
+
+                    <div class="form-row col-md">
+                        <div class="form-group col-md-4">
+                            <label for="produtoItem">Produto:</label>
+                            <select required name="pro_codigo" id="pro_codigo" class="form-control" onBlur="index.carregarItem()"></select>
+
+                        </div>
+
+                        <div class="form-group col-md-1">
+                            <label for="quant">Quant.:</label>
+                            <input name="pi_quant" type="number" class="form-control" id="pi_quant" onBlur="index.carregarItem()" value="1">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="valor_unit">Valor Unitário.:</label>
+                            <input disabled name="pi_valor_unit" type="text" class="form-control" id="pi_valor_unit" value="0,00">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="valor_tot">Valor Total.:</label>
+                            <input disabled name="pi_valor_tot" type="text" class="form-control" id="pi_valor_tot" value="0,00">
+                        </div>
+
+                        <div class="form-group col-md-2 ">
+                            <div style="position: relative; top: 32px; width: 90px;">
+                                <input class="btn btn-primary" type="button" value="Incluir" onclick="index.adicionar()" />
+                            </div>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Descrição       </th>
+                                    <th>Qtde.           </th>
+                                    <th>Valor Unit.     </th>
+                                    <th>Valor Total.    </th>
+                                    <th>                </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyItems"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="container" style="background-color:#E4E4E4">
+                    <div class="form-group col-md-6">
+                        <h3>Totais</h3>
+                    </div>
+                    <div class="form-row col-md">
+                        <div class="form-group col-md4">
+                            <label for="totalbruto">Total Bruto:</label>
+                            <input disabled name="ped_valor_bruto" type="text" class="form-control" id="ped_valor_bruto" value="0,00">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="desconto">Desconto:</label>
+                            <input name="ped_desconto" type="text" class="form-control" id="ped_desconto" value="0,00">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="totalliquido">Total Liquido:</label>
+                            <input disabled name="ped_valor_total" type="text" class="form-control" id="ped_valor_total" value="0,00">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group shadow-textarea col-md-8">
+                    <label for="obs">Observações*:</label>
+                    <textarea required name="ped_observacao" class="form-control z-depth-1" id="ped_observacao" maxlength="100"
+                              rows="3" placeholder="Observações do Pedido..."></textarea>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="divMsg" name="divMsg" id="divMsg"></label>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="btn btn-primary" type="button" value="Gravar" onclick="index.gravar()" />
+                    <input class="btn btn-primary" type="button" value="Excluir" onclick="index.excluir()" />
+                    <input class="btn btn-primary" type="button" value="Limpar" onclick="index.limpar()" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    index.carregaClientes("");
+    index.carregaProdutos("");
+    index.Limpar();
+</script>

@@ -1,0 +1,139 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Sistma GPizza" content="">
+    <title>Sistema GPizza</title>
+    <link href="~/css/Modal_Pesquisa/modal.css" rel="stylesheet" />
+    @RenderSection("estilos", required: false)
+    @RenderSection("scripts", required: false)
+    <link href="~/lib/Framework/fontello/css/fontello.css" rel="stylesheet" />
+
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+        <a class="navbar-brand mr-1" href="~/Home/index">Sistema GPizza</a>
+        <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+            </div>
+        </form>
+        <!-- Navbar -->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <div style="text-align: center; position: relative; color: #0722F0;">
+                        <label class="h6" name="nome_usuario"> @Context.Session.GetString("fun_nome") </label>
+                    </div>
+                    <div class="dropdown-divider"></div> 
+                    <a class="dropdown-item" href="">Alterar Dados</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Sair</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <ul class="sidebar navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="~/Home">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Relatórios</span>
+                </a>
+            </li>
+
+            @if (Context.Session.GetString("fun_nivel") == "1")
+            {
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="~/Home" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Cadastros</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="~/Funcionario/index">Funcionários</a>
+                        <a class="dropdown-item" href="~/Cliente/index">Clientes</a>
+                        <a class="dropdown-item" href="~/Cidade/index">Cidades</a>
+                        <a class="dropdown-item" href="~/Produto/index">Produtos</a>
+                    </div>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="~/Home" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Cadastros</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="~/Cliente/index">Clientes</a>
+                        <a class="dropdown-item" href="~/Cidade/index">Cidades</a>
+                        <a class="dropdown-item" href="~/Produto/index">Produto</a>
+                    </div>
+                </li>
+            }
+
+            <li class="nav-item active">
+                <a class="nav-link" href="~/Pedido/index">
+                    <i class="fas fa-fw fa fa-calculator"></i>
+                    <span>Pedido</span>
+                </a>
+            </li>
+        </ul>
+
+        <div id="content-wrapper">
+            <div class="container-fluid">
+
+            </div>
+
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © Thiago Marcondes de Sá</span>
+                    </div>
+                </div>
+            </footer>                                 
+            @RenderBody()
+        </div>
+        <!-- /.content-wrapper -->   
+    </div>
+
+
+ 
+
+    <!-- /#wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja sair ?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Clique em "Sair" abaixo se você estiver pronto para terminar sua sessão atual.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="~/Login">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

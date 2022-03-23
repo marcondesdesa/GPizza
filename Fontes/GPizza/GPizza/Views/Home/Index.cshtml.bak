@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section estilos{
+    <link href="~/lib/Framework/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/Framework/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="~/lib/Framework/css/sb-admin.css" rel="stylesheet">
+    <link href="~/css/css.css" rel="stylesheet" />
+}
+
+@section scripts{
+    <script src="~/lib/Framework/vendor/jquery/jquery.min.js"></script>
+    <script src="~/lib/Framework/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Framework/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/lib/Framework/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="~/lib/Framework/js/sb-admin.min.js"></script>
+    <script src="~/lib/Framework/js/demo/datatables-demo.js"></script>
+    <script src="~/lib/Framework/js/demo/chart-area-demo.js"></script>
+}
+
+
