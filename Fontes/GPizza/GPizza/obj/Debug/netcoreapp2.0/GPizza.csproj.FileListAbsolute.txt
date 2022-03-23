@@ -1,0 +1,48 @@
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.deps.json
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.json
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.dev.json
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.dll
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.pdb
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csproj.CoreCompileInputs.cache
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfoInputs.cache
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfo.cs
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.dll
+C:\Users\marco\Source\ProjetoPIT\GPizza\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.pdb
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.deps.json
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.json
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.dev.json
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.dll
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.pdb
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csprojAssemblyReference.cache
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csproj.CoreCompileInputs.cache
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfoInputs.cache
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfo.cs
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.dll
+D:\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.pdb
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.deps.json
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.json
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.dev.json
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.dll
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.pdb
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csprojAssemblyReference.cache
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfoInputs.cache
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfo.cs
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.dll
+C:\Users\Aluno\Source\Repos\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.pdb
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\appsettings.Development.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\appsettings.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\bundleconfig.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.deps.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.runtimeconfig.dev.json
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.dll
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\bin\Debug\netcoreapp2.0\GPizza.pdb
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfoInputs.cache
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.AssemblyInfo.cs
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csproj.CoreCompileInputs.cache
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.dll
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.pdb
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.genruntimeconfig.cache
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.csproj.AssemblyReference.cache
+D:\Faculdade\4º TERMO\ProjetoGPizza\Fontes\GPizza\GPizza\obj\Debug\netcoreapp2.0\GPizza.GeneratedMSBuildEditorConfig.editorconfig

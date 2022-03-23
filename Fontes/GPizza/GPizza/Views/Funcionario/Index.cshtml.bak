@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section estilos{
+    <link href="~/lib/Framework/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/Framework/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="~/lib/Framework/css/sb-admin.css" rel="stylesheet">
+    <link href="~/lib/fancybox/fancybox3/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="~/css/css.css" rel="stylesheet" />
+    <link href="~/css/Modal_Pesquisa/modal.css" rel="stylesheet" />
+}
+
+@section scripts{
+
+    <script src="~/lib/FodaoJS.js"></script>
+    <script type="text/javascript" src="~/lib/FodaoJS.js"></script>
+    <script src="~/js/Funcionario/index.js"></script>
+    <script src="~/lib/Framework/vendor/jquery/jquery.min.js"></script>
+    <script src="~/lib/Framework/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Framework/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="~/lib/Framework/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="~/lib/Framework/js/sb-admin.min.js"></script>
+    <script src="~/lib/Framework/js/demo/datatables-demo.js"></script>
+
+
+    <script src="~/lib/fancybox/jquery/jquery-3.4.0.min.js"></script>
+    <script src="~/lib/fancybox/fancybox3/jquery.fancybox.min.js"></script>
+}
+
+
+
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <div class="card mb-3">
+            <div class="container" style="background-color:#E4E4E4">
+                <div class="form-group col-md-6">
+                    <h1>Cadastro de Funcionário</h1>
+                </div>
+                <div class="form-row col-md">
+                    <div class="form-group col-md-2">
+                        <label for="id">Código:</label>
+                        <input name="fun_codigo" type="number" class="form-control" id="fun_codigo" value="0" disabled>
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <div style="position: relative; top: 32px; width: 90px;">
+                            <input class="btn btn-primary" type="button" value="Pesquisar" onclick="index.abrirPesquisa()" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md ">
+
+                </div>
+                <div class="form-row col-md">
+                    <div class="form-group col-md-8">
+                        <label for="nome">Nome*:</label>
+                        <input required name="fun_nome" type="text" maxlength="40" class="form-control" id="fun_nome" placeholder="Nome do Funcionário..." value="" autofocus>
+                    </div>
+                </div>
+
+                <div class="form-row col-md">
+                    <div class="form-group col-md-4">
+                        <label for="inputNivel">Nível de Acesso*:</label>
+                        <select required name="fun_nivel" id="fun_nivel" class="form-control">
+                            <option value="1">Administrador </option>
+                            <option value="2" selected>Funcionário</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container" style="background-color:#E4E4E4">
+                    <div class="form-group col-md-6">
+                        <h5>Login do Sistema</h5>
+                    </div>
+                    <div class="form-row col-md">
+                        <div class="form-group col-md-4">
+                            <label for="login">Usuário*:</label>
+                            <input name="fun_usuario" type="text" pattern="^[_A-z0-9]{1,}$" class="form-control" id="fun_usuario" maxlength="10" placeholder="Usuário (10 Caracteres)..." value="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="senha">Senha*:</label>
+                            <input name="fun_senha" type="password" class="form-control" id="fun_senha" maxlength="10" placeholder="Senha (10 digitos)..." value="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-4">
+                    <label for="divMsg" name="divMsg" id="divMsg"></label>
+                </div>
+
+                <div class="form-group col-md">
+                    <input class="btn btn-primary" type="button" value="Gravar" onclick="index.gravar()" />
+                    <input class="btn btn-primary" type="button" value="Excluir" onclick="index.excluir()" />
+                    <input class="btn btn-primary" type="button" value="Limpar" onclick="index.limpar()" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

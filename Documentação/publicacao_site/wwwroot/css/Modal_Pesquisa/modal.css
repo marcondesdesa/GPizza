@@ -1,0 +1,7 @@
+﻿.fancybox-slide--iframe .fancybox-content {
+    width: 700px;
+    height: 800px;
+    min-height: 50%;
+    max-width:70%;
+    margin-left:20%;   
+}

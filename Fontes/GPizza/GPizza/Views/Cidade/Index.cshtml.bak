@@ -1,0 +1,114 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section estilos{
+    <link href="~/lib/Framework/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/Framework/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="~/lib/Framework/css/sb-admin.css" rel="stylesheet">
+    <link href="~/lib/fancybox/fancybox3/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="~/css/css.css" rel="stylesheet" />
+    <link href="~/css/Modal_Pesquisa/modal.css" rel="stylesheet" />
+}
+
+@section scripts{
+
+    <script src="~/lib/FodaoJS.js"></script>
+    <script type="text/javascript" src="~/lib/FodaoJS.js"></script>
+    <script src="~/js/Cidade/index.js"></script>
+    <script src="~/lib/Framework/vendor/jquery/jquery.min.js"></script>
+    <script src="~/lib/Framework/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Framework/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="~/lib/Framework/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="~/lib/Framework/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="~/lib/Framework/js/sb-admin.min.js"></script>
+    <script src="~/lib/Framework/js/demo/datatables-demo.js"></script>
+
+
+    <script src="~/lib/fancybox/jquery/jquery-3.4.0.min.js"></script>
+    <script src="~/lib/fancybox/fancybox3/jquery.fancybox.min.js"></script>
+}
+
+
+
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <div class="card mb-3">
+            <div class="container" style="background-color:#E4E4E4">
+                <div class="form-group col-md-6">
+                    <h1>Cadastro de Cidade</h1>
+                </div>
+                <div class="form-row col-md">
+                    <div class="form-group col-md-2">
+                        <label for="id">Código:</label>
+                        <input name="cid_codigo" type="number" class="form-control" id="cid_codigo" value="0" disabled>
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <div style="position: relative; top: 32px; width: 90px;">
+                            <input class="btn btn-primary" type="button" value="Pesquisar" onclick="index.abrirPesquisa()" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md ">
+
+                </div>
+                <div class="form-row col-md">
+                    <div class="form-group col-md-8">
+                        <label for="nome">Nome*:</label>
+                        <input required name="cid_nome" type="text" maxlength="40" class="form-control" id="cid_nome" placeholder="Nome da Cidade..." value="" autofocus>
+                    </div>
+                </div>
+
+                <div class="form-row col-md">
+                    <div class="form-group col-md-4">
+                        <label for="inputcid_uf">Estado*:</label>
+                        <select required name="cid_uf" id="cid_uf" class="form-control">
+                            <option value="1">Acre (AC)</option>
+                            <option value="2">Alagoas (AL)</option>
+                            <option value="3">Amapá (AP)</option>
+                            <option value="4">Amazonas (AM)</option>
+                            <option value="5">Bahia (BA)</option>
+                            <option value="6">Ceará (CE)</option>
+                            <option value="7">Distrito Federal (DF)</option>
+                            <option value="8">Espírito Santo (ES)</option>
+                            <option value="9">Goiás (GO)</option>
+                            <option value="10">Maranhão (MA)</option>
+                            <option value="11">Mato Grosso (MT)</option>
+                            <option value="12">Mato Grosso do Sul (MS)</option>
+                            <option value="13">Minas Gerais (MG)</option>
+                            <option value="14">Pará (PA)</option>
+                            <option value="15">Paraíba (PB)</option>
+                            <option value="16">Paraná (PR)</option>
+                            <option value="17">Pernambuco (PE)</option>
+                            <option value="18">Piauí (PI)</option>
+                            <option value="19">Rio de Janeiro (RJ)</option>
+                            <option value="20">Rio Grande do Norte (RN)</option>
+                            <option value="21">Rio Grande do Sul (RS)</option>
+                            <option value="22">Rondônia (RO)</option>
+                            <option value="23">Roraima (RR)</option>
+                            <option value="24">Santa Catarina (SC)</option>
+                            <option value="25" selected>São Paulo (SP)</option>
+                            <option value="26">Sergipe (SE)</option>
+                            <option value="27">Tocantins (TO)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="divMsg" name="divMsg" id="divMsg"></label>
+                </div>
+
+                <div class="form-group col-md">
+                    <input class="btn btn-primary" type="button" value="Gravar" onclick="index.gravar()" />
+                    <input class="btn btn-primary" type="button" value="Excluir" onclick="index.excluir()" />
+                    <input class="btn btn-primary" type="button" value="Limpar" onclick="index.limpar()" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
